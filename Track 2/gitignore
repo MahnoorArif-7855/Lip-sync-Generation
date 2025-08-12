@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+.env
+venv/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Media / outputs
+outputs/
+data/intermediates/
+*.mp4
+*.ts
+*.m3u8
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg
+
+# Colab / VSCode
+.colabfold
+.vscode/

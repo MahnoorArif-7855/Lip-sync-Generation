@@ -1,0 +1,5 @@
+ffmpeg (system)
+google
+gtts
+requirements.txt
+transformers

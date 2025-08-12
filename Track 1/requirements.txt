@@ -1,0 +1,11 @@
+torch
+torchvision
+torchaudio
+opencv-python
+moviepy
+pydub
+soundfile
+librosa
+ffmpeg-python
+TTS
+gdown
