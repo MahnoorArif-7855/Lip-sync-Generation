@@ -1,0 +1,28 @@
+audio:
+  lra: 11
+  target_lufs: -16
+  true_peak: -1.5
+io:
+  face_image: /content/face.jpg
+  out_dir: /content/outputs
+  serve: none
+segment:
+  min_overlap: 0.25
+  target_seconds: 12.0
+serve:
+  hls_time: 4
+stitch:
+  crf: 18
+  preset: medium
+tts:
+  engine: coqui
+  model_name: tts_models/en/ljspeech/tacotron2-DDC
+  sample_rate: 22050
+  voice: en_default
+video:
+  fps: 25
+  height: 720
+  pix_fmt: yuv420p
+  sar: 1
+  width: 1280
+  xfade_seconds: 0.6
