@@ -8,7 +8,7 @@ This repository contains my submission for the Alethea AI Machine Learning Engin
 
 ## ✅ What’s Included
 - Reproducible notebook implementing the end‑to‑end pipeline
-- Final rendered video (MP4) output (see **Outputs**)
+- Final rendered video (MP4) output (see **Outputs**) [Direct link](https://drive.google.com/file/d/1CMi7kWkMG_x_u8QBml5SEisMZ7UxWn7C/view?usp=sharing)
 - **HLS** (HTTP Live Streaming) export for web playback
 - Notes on trade‑offs and known issues
 - This README with setup and run instructions
@@ -129,14 +129,6 @@ This project uses:
 - **librosa**, **OpenCV**, **PyTorch**
 
 Please review and comply with upstream licenses.
-
----
-
-## 📧 Acknowledgement Template
-When ready to submit, email back with:
-- Public repo URL
-- [Direct link](https://drive.google.com/file/d/1CMi7kWkMG_x_u8QBml5SEisMZ7UxWn7C/view?usp=sharing) to MP4 (`outputs/final.mp4`) and/or HLS playlist
-- Any notes on trade‑offs or known issues
 
 ---
 
