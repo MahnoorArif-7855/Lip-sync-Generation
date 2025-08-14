@@ -125,7 +125,6 @@ This repository contains my submission for the Alethea AI Machine Learning Engin
 This project uses:
 - **Wav2Lip** (Rudrabha et al.)
 - **Coqui TTS** (Coqui.ai)
-- **FFmpeg**/**FFprobe**
 - **librosa**, **OpenCV**, **PyTorch**
 
 Please review and comply with upstream licenses.
