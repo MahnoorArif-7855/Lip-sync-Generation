@@ -77,12 +77,6 @@ Saved -> /content/final.mp4
 ---
 
 ## 🧠 Pipeline Overview
-
-Key functions (auto-detected):
-```
-(pipeline implemented directly in cells)
-```
-
 Typical stages:
 1. Prepare inputs (frames/audio/models)
 2. Generate or assemble frames at a consistent FPS
