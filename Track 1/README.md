@@ -1,6 +1,6 @@
 # Alethea AI — Video Generation Assignment (Track A)
 
-This repository contains my **Track A** submission for Alethea AI's Machine Learning Engineer assignment. It demonstrates a video generation pipeline with clean, reproducible steps and a final **MP4/HLS** output.
+This repository contains my **Track A** submission for Alethea AI's Machine Learning Engineer assignment. It demonstrates a video generation pipeline with clean, reproducible steps and a final **MP4** output.
 
 > Primary notebook: `alethea_track_A.ipynb`
 
@@ -13,9 +13,7 @@ This repository contains my **Track A** submission for Alethea AI's Machine Lear
 - This README with installation and run instructions
 
 ## 🧩 Problems Covered
-- Problem 1 and Problem 2 per the PDF: input → generation → export
-
-If the PDF uses different labels, the above covers the required **generation + export** components.
+- Problem 1 per the PDF: input → generation → export
 
 ---
 
@@ -24,16 +22,10 @@ If the PDF uses different labels, the above covers the required **generation + e
 .
 ├── README.md
 ├── requirements.txt
-├── notebooks/
-│   └── alethea_track_A.ipynb
-├── data/
-│   ├── inputs/
-│   └── intermediates/
+├ alethea_track_A.ipynb
+├── inputs/
 ├── outputs/
 │   ├── final.mp4
-│   └── hls/
-└── scripts/
-    └── export_hls.sh
 ```
 
 ---
@@ -62,37 +54,17 @@ Install FFmpeg (if required):
 ---
 
 ## 🚀 How to Run
-
-### Local (Jupyter/VS Code)
-1. Create folders:
-   ```bash
-   mkdir -p notebooks data/inputs data/intermediates outputs
-   ```
-2. Place inputs (video/audio/frames) in `data/inputs/`.
-3. Open and execute:
-   ```bash
-   jupyter notebook notebooks/alethea_track_A.ipynb
-   ```
-4. Final outputs are saved to `outputs/final.mp4`.
-
 ### Colab
 - Open the notebook in Colab.
 - Adjust any `/content/...` paths to `data/` and `outputs/` if needed.
 - Enable GPU if generation uses models; CPU is fine for pure ffmpeg stages.
-
-### Optional: Export HLS
-```bash
-bash scripts/export_hls.sh outputs/final.mp4 outputs/hls
-```
-
 ---
 
 ## 🎬 Inputs & Outputs
-- **Inputs**: `data/inputs/` (place assets here)
-- **Intermediates**: `data/intermediates/`
+- **Inputs**: `inputs/` (place assets here)
 - **Outputs**: `outputs/final.mp4` and optional HLS at `outputs/hls/`
 
-Detected paths in notebook:
+ Paths in notebook:
 ```
 /content/Wav2Lip/results/final.mp4
 /content/final.mp4
@@ -115,7 +87,7 @@ Typical stages:
 1. Prepare inputs (frames/audio/models)
 2. Generate or assemble frames at a consistent FPS
 3. Compose clips, apply transitions, and align audio
-4. Encode final MP4 (faststart) and optional HLS
+4. Encode final MP4 (faststart)
 5. Validate streams with ffprobe
 
 ---
@@ -136,36 +108,14 @@ Typical stages:
 
 ## ✅ Submission Checklist
 - [x] Public repo with organized structure
-- [x] Functional video/demo link (MP4/HLS)
+- [x] Functional video/demo link [(MP4)](https://drive.google.com/file/d/1U1aEEBHrA0pOhu0bwqne2CNABrMQGHUB/view?usp=sharing)
 - [x] README with installation, usage, prereqs, and known issues
 - [x] Trade-offs documented
 
 ---
 
 ## 📎 Attribution
-- FFmpeg/FFprobe for media I/O and transcoding
 - Python packages used in the notebook: TTS, torch
-
----
-
-## 📤 GitHub Push (quick start)
-```bash
-git init
-git add .
-git commit -m "Alethea AI Track A submission"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin main
-```
-
-Use Git LFS for large media:
-```bash
-git lfs install
-git lfs track "*.mp4" "*.m3u8" "*.ts" "*.wav" "*.mp3"
-git add .gitattributes
-git commit -m "Track large media with LFS"
-git push
-```
 
 ---
 
